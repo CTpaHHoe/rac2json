@@ -4,23 +4,23 @@ use strict;
 use warnings;
 use utf8;
 
-use Carp;
-use English qw( -no_match_vars ) ;
+# use Carp;
+# use English qw( -no_match_vars ) ;
 # use Data::Dumper::AutoEncode '-dumper';
 
 #use Encode;
 use warnings FATAL => 'all';
 use autodie;
 use Devel::Peek qw(Dump);
-use Encode qw(decode encode);
+#use Encode qw(decode encode);
 
 my $L=0;
 my $C=0;
 my $NR=0;
 
-sub ltrim { my $s = shift; $s =~ s/\A \s+ //mxs;            return $s }
-sub rtrim { my $s = shift; $s =~ s/ \s+ \z //mxs;           return $s }
-sub  trim { my $s = shift; $s =~ s/\A \s+ | \s+ \z //gmxs;  return $s }
+## sub ltrim { my $s = shift; $s =~ s/\A \s+ //mxs;            return $s }
+## sub rtrim { my $s = shift; $s =~ s/ \s+ \z //mxs;           return $s }
+## sub  trim { my $s = shift; $s =~ s/\A \s+ | \s+ \z //gmxs;  return $s }
 
 
 printf( "[\n" );
